@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import Inventory from "./Inventory";
 
-export default function Inventories(props) {
+export default function Inventories() {
     let [inventories, setInventories] = useState([])
     useEffect(() => {
         fetch('https://api.sampleapis.com/futurama/inventory').then(value => value.json()).then(value => {
